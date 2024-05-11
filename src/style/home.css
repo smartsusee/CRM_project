@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.page-flex {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.page-flex:hover {
+  cursor: pointer;
+}
+
+.activedata {
+  background-color: rgb(183, 204, 204);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#pagenation-section {
+  display: flex;
+  justify-content: center;
+}
