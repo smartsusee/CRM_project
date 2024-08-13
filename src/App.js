@@ -5,9 +5,9 @@ import Home from "./toggle_com/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PrivateRoutes from "./untils/PrivateRoutes";
 import Login from "./register/Login";
-import Update from "./toggle_com/Update";
 import Status from "./toggle_com/Status";
 import RegisterForm from "./register/RegisterForm";
+import ReadData from "./toggle_com/ReadData";
 
 function App() {
   return (
@@ -19,25 +19,12 @@ function App() {
 
             <Route path="/" element={<RegisterForm />} exact />
 
-            <Route element={<Home />} path="/home" />
-            <Route path="/update" element={<Update />} />
+            <Route element={<ReadData />} path="/home" />
             <Route path="/Status" element={<Status />} />
           </Route>
           <Route element={<Login />} path="/login" />
         </Routes>
       </Router>
-
-      {/* <div className="App">
-        <Router>
-          <Routes>
-            <Route element={<PrivateRoutes />}>
-              <Route element={<Toggle_data />} path="/" exact />
-              <Route element={<Update />} path="/update" />
-            </Route>
-            <Route element={<Login />} path="/login" />
-          </Routes>
-        </Router>
-      </div> */}
     </>
   );
 }

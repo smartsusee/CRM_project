@@ -181,7 +181,7 @@ function ToggleIcon() {
                 className="Home"
               >
                 {" "}
-                home
+                Add Data
               </span>
               <h5
                 onClick={() => {
